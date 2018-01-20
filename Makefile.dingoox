@@ -1,0 +1,14 @@
+all: sdlfix.so
+
+CHAINPREFIX=/dingux
+CC=mipsel-linux-uclibc-gcc
+
+sdlfix.so: sdlfix.o
+	$(CC) -shared -fpic -o $@ $<
+
+CFLAGS = -fpic -g -O0 -Wall -Wextra -Werror 
+
+.PHONY: clean
+
+clean:
+	$(RM) sdlfix.so sdlfix.o
