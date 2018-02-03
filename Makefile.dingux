@@ -1,7 +1,7 @@
 all: sdlfix.so
 
 CHAINPREFIX=/dingux
-CC=mipsel-linux-uclibc-gcc
+CC=mipsel-linux-gcc
 
 sdlfix.so: sdlfix.o
 	$(CC) -shared -fpic -o $@ $<
