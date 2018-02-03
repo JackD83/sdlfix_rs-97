@@ -21,7 +21,7 @@ write a new text file with "dge" or "sh" extension
 with the following content:
 
 #!/bin/sh
-LD_PRELOAD=./sdlfix.so ./DinguxCommander_.dge
+LD_PRELOAD=./sdlfix.so ./DinguxCommander.dge
 
 Make sure that you use an editor capable of linux type new lines (I prefere Visual Studio Code). You need "LF" in the bottomn right, not "CRLF"
 
